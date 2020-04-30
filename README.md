@@ -29,3 +29,11 @@ to design an HTML page.
     app.use('view engine', 'ejs')
     ```
 
+Bcrypt:
+    - https://www.youtube.com/watch?v=O6cmuiTBZVs
+    - If passwords are hashed without any salt, a hacker can generate a list hashes for common passwords and try them all.
+    - By passing a salt, it makes it slower to create the hacker's dictionary that maps common passwords for hashed passwords
+    - Bcrypt is slowing than other password hashing libraries, which has benefits.
+
+To display flash messages- need session because we're redirecting and upon redirect, we do not store state
+    - declare global variables in app.use ... req.locals
