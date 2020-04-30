@@ -10,11 +10,11 @@ router is a middleware
 
 // login gets appended to the route uri
 router.get('/login', (req, res) => { //get request
-    res.send('login page')
+    res.render('login')
 })
 
 router.get('/register', (req, res) => { //get request
-    res.send('sign up page')
+    res.render('register')
 })
 
 module.exports = router

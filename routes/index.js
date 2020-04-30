@@ -8,7 +8,7 @@ router is a middleware
 
 */
 router.get('/', (req, res) => { //get request
-    res.send('home page')
+    res.render('welcome') //renders welcome view - js automatically looks for welcome.js under views
 })
 
 module.exports = router
