@@ -11,6 +11,12 @@ https://fontawesome.com/
 3. create views
     - create layout boiler plate; add bootstrap, bootswatch, fontawesome
     - complete other views using ejs
+4. setup config
+    - store mongo uri in a keys file,  and add that to gitignore
+    - import that uri, mongoose connect, and on successful connection, open, and log success message
+    - db = require('file of uri')
+    - mongoose.connect(db)
+    - mongoose.connection.on('open', ()=>console.log('success'))
 
 Notes:
 A template engine allows you use static template files in your application. At runtime, the template engine replaces variables
